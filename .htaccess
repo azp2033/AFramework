@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/static.*$
+RewriteRule ^(.*)$ - [L,NC]
+
+RewriteRule ^ index.php [L]
